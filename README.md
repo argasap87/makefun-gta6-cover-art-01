@@ -1,8 +1,8 @@
 # V12 Neon Heist — GTA 6 Cover Maker
 
 [![Make GTA 6](https://make.fun/badge/gta6-cover-art-01.svg)](https://make.fun/c/gta6-cover-art-01)
-[![Make GTA 6 rank](https://make.fun/badge/rank/argasap87/makefun-gta6-cover-art-01.svg)](https://make.fun/c/gta6-cover-art-01)
-[![Make GTA 6 reward](https://make.fun/badge/reward/argasap87/makefun-gta6-cover-art-01.svg)](https://make.fun/c/gta6-cover-art-01)
+[![Make GTA 6 rank](https://make.fun/badge/gta6-cover-art-01/argasap87/makefun-gta6-cover-art-01/rank.svg)](https://make.fun/c/gta6-cover-art-01)
+[![Make GTA 6 reward](https://make.fun/badge/gta6-cover-art-01/argasap87/makefun-gta6-cover-art-01/reward.svg)](https://make.fun/c/gta6-cover-art-01)
 
 **Bounty:** [Make GTA 6 Cover Art — gta6-cover-art-01, $250](https://make.fun/c/gta6-cover-art-01)
 **Referral code:** `1ae1r9cj`

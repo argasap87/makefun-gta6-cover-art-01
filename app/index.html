@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V12 Neon Heist — GTA 6 Cover Maker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="six">6</span>
+    <div>
+      <h1>V12 NEON HEIST</h1>
+      <p>GTA 6 Cover Maker &mdash; 1 car. 1 light. 6 ways out.</p>
+    </div>
+  </div>
+  <div class="steps"><span><b>1</b> Add a photo</span><span><b>2</b> Pick a layout &amp; caption</span><span><b>3</b> Export PNG</span></div>
+</header>
+
+<main>
+  <section class="panel" id="controls">
+    <h2>Your photo</h2>
+    <div class="slots" id="slots"></div>
+    <div class="row">
+      <label class="btn file">+ Add photo
+        <input type="file" id="fileInput" accept="image/*" multiple hidden>
+      </label>
+      <button class="btn ghost" id="sampleBtn">Use sample photo</button>
+      <button class="btn ghost" id="clearBtn">Clear photos</button>
+    </div>
+    <p class="hint">Tip: drag the photo on the preview to reposition it. Sliders fine-tune the active panel.</p>
+
+    <div class="field">
+      <label for="zoom">Zoom <span id="zoomVal">100%</span></label>
+      <input type="range" id="zoom" min="100" max="260" value="100">
+    </div>
+    <div class="field">
+      <label for="offX">Move left / right</label>
+      <input type="range" id="offX" min="-40" max="40" value="0">
+    </div>
+    <div class="field">
+      <label for="offY">Move up / down</label>
+      <input type="range" id="offY" min="-40" max="40" value="0">
+    </div>
+
+    <h2>Layout</h2>
+    <div class="seg" id="layoutSeg">
+      <button data-layout="hero" class="on">Hero 6</button>
+      <button data-layout="split">Split 2</button>
+      <button data-layout="grid">Grid 4</button>
+    </div>
+    <p class="hint">Hero 6 puts one giant neon &ldquo;6&rdquo; behind the car. Split and Grid fill
+      two or four panels with your photos.</p>
+
+    <h2>Caption</h2>
+    <div class="field">
+      <label for="titleInput">Big title</label>
+      <input type="text" id="titleInput" value="GTA VI" maxlength="24">
+    </div>
+    <div class="field">
+      <label for="tagInput">Tagline</label>
+      <input type="text" id="tagInput" value="1 CAR. 1 LIGHT. 6 WAYS OUT." maxlength="60">
+    </div>
+    <div class="field">
+      <label for="badgeInput">Badge (top left)</label>
+      <input type="text" id="badgeInput" value="V12 NEON HEIST" maxlength="24">
+    </div>
+
+    <h2>Grade &amp; size</h2>
+    <div class="seg" id="gradeSeg">
+      <button data-grade="neon" class="on">Neon Night</button>
+      <button data-grade="sunset">Vice Sunset</button>
+      <button data-grade="midnight">Midnight</button>
+    </div>
+    <div class="field">
+      <label for="sizeSel">Export size</label>
+      <select id="sizeSel">
+        <option value="1080x1080">Square &mdash; 1080 &times; 1080</option>
+        <option value="1080x1350">Portrait &mdash; 1080 &times; 1350</option>
+        <option value="1920x1080">Wide &mdash; 1920 &times; 1080</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="stage">
+    <div class="canvasWrap">
+      <canvas id="preview" width="1080" height="1080"></canvas>
+      <div class="dropHint" id="dropHint">Drop a photo here</div>
+    </div>
+    <div class="exportBar">
+      <button class="btn big" id="exportBtn">Export PNG</button>
+      <button class="btn big ghost" id="exportAllBtn">Export all 3 sizes</button>
+      <span id="status" class="status">Ready &mdash; hero preset loaded.</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Original fan-made cover tool. No Rockstar Games logo, artwork, character or font is used.
+  Photos stay in your browser &mdash; nothing is uploaded. Works fully offline.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
